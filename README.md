@@ -1,4 +1,15 @@
 # Assignment
+
+## 개발 환경/에셋소스
+Unity ver: 2022.3.2f1 <br/><br/>
+IDE: VS Code 2022 <br/><br/>
+Package Manager Install: Input System <br/><br/>
+Aseets: <br/><br/> 
+캐릭터,NPC: https://assetstore.unity.com/packages/2d/characters/2d-character-sprite-animation-penguin-236747 <br/><br/>
+타일맵: https://assetstore.unity.com/packages/2d/environments/rogue-fantasy-castle-164725
+
+<br/><br/> 
+
 ## 주요기능
 
 1. W,A,S,D를 이용해서 캐릭터 원하는 방향으록 이동
@@ -9,8 +20,8 @@
 <br/><br/>
    
 ## Souloution
-1. CharacterController.cs를 통해 Move와 Look을 호출하는 함수 사용 ( Action 이용)
-   Input System 사용하여 Keyboard(W,A,S,D) Mouse(position)을 이용하여 각각 Move와 Look에 함수를 PlayerInputController.cs에 사용
+1. CharacterController.cs를 통해 Move와 Look을 호출하는 함수 사용 ( Action 이용)<br/><br/> 
+   Input System 사용하여 Keyboard(W,A,S,D) Mouse(position)을 이용하여 각각 Move와 Look에 함수를 PlayerInputController.cs에 사용<br/><br/> 
    Movement.cs에서 입력된 값 처리해서 Move와 Look 함수에 사용
 
 <br/><br/>
