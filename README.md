@@ -17,3 +17,26 @@
  LookingPoint.flipY = Mathf.Abs(rotZ) > 90f;
  characterRenderer.flipX = LookingPoint.flipY;
  LookingPivot.rotation = Quaternion.Euler(0, 0, rotZ);
+```
+
+3. 메인 카메라에 Camera.cs를 걸어주고 캐릭터 따라다니게 설정
+```
+public GameObject target; // 카메라가 따라갈 대상 = Player
+[SerializeField] private float CameraSpeed = 5f; // 카메라가 따라갈 속도
+private Vector3 targetPosition; // 대상의 현재 위치
+
+// Update is called once per frame
+void Update()
+{
+    if (target.gameObject != null)
+    {
+        // this는 카메라를 의미 (z값은 카메라값을 그대로 유지)
+        targetPosition.Set(target.transform.position.x, target.transform.position.y, -10);
+
+        // vectorA -> B까지 T의 속도로 이동
+        this.transform.position = Vector3.Lerp(this.transform.position, targetPosition, CameraSpeed);
+```
+
+4. 타일맵 팔레트를 이용하여 Floor, Wall, Collision(투명화 시킴) 나눠서 맵구성 
+   ![image](https://github.com/Leejungsuk96/Assignment/assets/114940193/6ead441a-709d-4708-bd12-0d8fd49b3d9f)
+
