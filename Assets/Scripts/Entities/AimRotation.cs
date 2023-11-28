@@ -5,8 +5,7 @@ using UnityEngine;
 
 public class AimRotation : MonoBehaviour
 {
-    [SerializeField] private SpriteRenderer LookingPoint;
-    [SerializeField] private Transform LookingPivot;
+    
 
     [SerializeField] private SpriteRenderer characterRenderer;
 
@@ -30,10 +29,9 @@ public class AimRotation : MonoBehaviour
     private void RotateArm(Vector2 direction)
     {
         float rotZ = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-
-        LookingPoint.flipY = Mathf.Abs(rotZ) > 90f;
-        characterRenderer.flipX = LookingPoint.flipY;
-        LookingPivot.rotation = Quaternion.Euler(0, 0, rotZ);
+       
+        characterRenderer.flipX = Mathf.Abs(rotZ) > 90f;
+        
 
     }
 }
