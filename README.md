@@ -15,7 +15,7 @@
 
 
 
-2. AimRotation.cs에서 가상의 LookPivot과 LookPoint를 만들어 캐릭터와의 Atan2 계산 후 90도가 넘어갈 실 Flip 사용
+2. ~~AimRotation.cs에서 가상의 LookPivot과 LookPoint를 만들어 캐릭터와의 Atan2 계산 후 90도가 넘어갈 실 Flip 사용~~
  ```
  float rotZ = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
  LookingPoint.flipY = Mathf.Abs(rotZ) > 90f;
