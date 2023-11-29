@@ -5312,8 +5312,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4693c2fd72335544b1a04284e6bf097, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookingPoint: {fileID: 832786844}
-  LookingPivot: {fileID: 134825263}
   characterRenderer: {fileID: 1835795826}
 --- !u!1 &519420028
 GameObject:
@@ -23753,6 +23751,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1835795825}
   - component: {fileID: 1835795826}
+  - component: {fileID: 1835795827}
   m_Layer: 0
   m_Name: MainSprite
   m_TagString: Untagged
@@ -23828,6 +23827,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1835795827
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835795824}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d5ea0d88b55ec6741b682fcafe220113, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1984245639
 GameObject:
   m_ObjectHideFlags: 0

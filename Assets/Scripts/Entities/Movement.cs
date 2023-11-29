@@ -10,11 +10,13 @@ public class Movement : MonoBehaviour
     private CharacterController _controller;
     private Vector2 _movementDirection = Vector2.zero;
     private Rigidbody2D _rigidbody;
+    
 
     private void Awake()
     {
         _controller = GetComponent<CharacterController>();
         _rigidbody = GetComponent<Rigidbody2D>();
+        
     }
     private void Start()
     {
